@@ -1,0 +1,13 @@
+#graphics {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/background.png);
+	color: black;
+	-webkit-background-size: 80% auto;
+	background-size: 80% auto;
+
+}
+h2 {
+	color: red;
+}
