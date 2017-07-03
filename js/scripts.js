@@ -68,11 +68,11 @@ function MainLoop() {
     //RENDERING ADJUSTMNETS
     grafx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
     for (var i = 0; i <= maxBlock; i++) grafx.drawImage(block[i].Sprite, block[i].X, block[i].Y);
-    if(isRight) {
+    if(isRight && !isSpace) {
     	grafx.drawImage(playerRigth.Sprite, player.X, player.Y);
-    } if (isLeft) {
+    } if (isLeft && !isSpace) {
     	grafx.drawImage(playerLeft.Sprite, player.X, player.Y);
-    } if (isRight && isSpace || isSpace) {
+    } if (isRight && isSpace && !isLeft|| isSpace && !isLeft) {
     	grafx.drawImage(playerRightJump.Sprite, player.X, player.Y);
     } if (isLeft && isSpace) {
     	grafx.drawImage(playerLeftJump.Sprite, player.X, player.Y);
